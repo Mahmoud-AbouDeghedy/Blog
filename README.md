@@ -1,38 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
 
-## Getting Started
+This Next.js project is a web application for managing and displaying events. Users can view featured events, explore event details, register for newsletters, and search for events based on specific criteria. The project includes various components, pages, API routes, and helper functions to provide a seamless user experience.
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The project structure includes the following components:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `components`: Contains reusable UI components for event details, event lists, newsletter registration, etc.
+- `pages`: Contains different pages of the application, including event detail pages, index page, events page, API routes, etc.
+- `helpers`: Contains utility functions for fetching events, filtering events, and interacting with the database.
+- `layout`: Contains the layout component for the application.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Code Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The project includes code snippets for various components and pages:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `EventList`: Renders a list of events using the `EventItem` component.
+- `EventItem`: Displays individual event details like title, date, location, and explore link.
+- `NewsletterRegistration`: Component for users to register for the newsletter.
+- `API routes`: Handles newsletter registration through a POST request.
+- `ResultsTitle`: Displays a title for events based on a specific date.
+- `EventDetailPage`: Displays detailed information about a specific event.
+- `Layout`: Main layout component for the application.
+- `AllEventsPage`: Shows all events with a search functionality.
+- `API Util`: Contains functions for fetching, filtering, and getting event details.
+- `HomePage`: Displays featured events and a newsletter registration form.
+- `_app.js` and `_document.js`: Next.js specific files for customizing the app.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Next.js GitHub Repository](https://github.com/vercel/next.js/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+To deploy your Next.js app, consider using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## API Routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+API routes in the `pages/api` directory are treated as API endpoints instead of React pages.
+
+## Font Optimization
+
+The project uses `next/font` for optimizing and loading the Inter font.
